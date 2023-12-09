@@ -14,7 +14,7 @@ import {
   
   export default function Navbarr() {
     return (
-        <div className='fixed w-full'>
+        <div className=' w-full fixed top-0 z-50'>
       <Navbar fluid rounded>
         <NavbarBrand href="https://recruitify.com">
           

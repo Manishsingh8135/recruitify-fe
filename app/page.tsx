@@ -6,9 +6,12 @@ import { Alert } from 'flowbite-react';
 export default function MyPage() {
   return (
     <>
-    <Navbarr/>
-    {/* <HomePage/> */}
-    <ParentComponent/>
+    
+    <div className='pt-16'>
+    <HomePage/>
+    </div>
+    
+    {/* <ParentComponent/> */}
     </>
   )
 }
