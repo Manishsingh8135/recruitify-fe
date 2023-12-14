@@ -1,3 +1,4 @@
+import { ClerkProvider } from '@clerk/nextjs'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbarr from '@/components/shared/Navbar'
@@ -16,6 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       
     
@@ -25,5 +27,6 @@ export default function RootLayout({
         </body>
       
     </html>
+    </ClerkProvider>
   )
 }
