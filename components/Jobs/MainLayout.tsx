@@ -18,7 +18,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ sidebar, content }) => {
       {/* Toggle Button */}
       <button
         onClick={toggleSidebar}
-        className="md:hidden fixed top-[50px] right-5 z-30 text-3xl"
+        className="md:hidden fixed top-[60px] left-0 z-50 text-2xl bg-gray-200 rounded-full p-2 px-3"
       >
         {isSidebarOpen ? '✖️' : '☰'} {/* Cross icon when open, Hamburger menu when closed */}
       </button>
@@ -26,8 +26,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ sidebar, content }) => {
       {/* Sidebar */}
       <div
         className={`${
-          isSidebarOpen ? 'md:w-3/10' : 'hidden md:block md:w-3/10'
-        } bg-gray-200 h-screen overflow-y-auto fixed md:relative left-0 top-0 z-20`}
+          isSidebarOpen ? 'md:w-3/10' : 'hidden md:block md:w-3/10 '
+        } bg-gray-200 h-screen overflow-y-auto fixed md:relative    z-40`}
       >
         {sidebar}
       </div>
